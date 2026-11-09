@@ -1,0 +1,5 @@
+# 路径不写在这里：工作区由 <workspace>/.bluetide/layout.json 决定（首启自动建，见 README）。
+# 需要指定落点时用插件配置的 workspace，或环境变量 BLUETIDE_WORKSPACE。
+- insert:
+    - id: bluetide-rings
+      name: '@local/bluetide-rings'

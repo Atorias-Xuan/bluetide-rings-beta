@@ -1,0 +1,75 @@
+{
+  "name": "@local/bluetide-rings",
+  "version": "1.0.0-bis",
+  "private": true,
+  "type": "module",
+  "description": "β v1.0.0-bis · Blue Tide three-ring cognitive architecture — an outer cognitive layer for the DeepSeek Harness Web UI",
+  "license": "GPL-3.0-or-later",
+  "author": "砚尘dust (@Atorias-Xuan)",
+  "engines": {
+    "node": ">=20"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.png"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.png",
+    "LICENSE",
+    "NOTICE",
+    "preflight.mjs",
+    "bluetide-build.json",
+    "verify-watermark.mjs",
+    "verify-integrity.mjs",
+    "intervention.js",
+    "logic",
+    "routes",
+    "store",
+    "settle",
+    "README.md",
+    "rings/baseline.json",
+    "stamp-integrity.mjs",
+    "watermark.mjs"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Atorias-Xuan/bluetide-rings-beta.git"
+  },
+  "homepage": "https://github.com/Atorias-Xuan/bluetide-rings-beta#readme",
+  "bugs": {
+    "url": "https://github.com/Atorias-Xuan/bluetide-rings-beta/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis-plugin",
+    "outer-cognitive-layer",
+    "persona",
+    "memory",
+    "context-routing",
+    "three-ring"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "prepare": "node -e \"process.exit(0)\"",
+    "test": "node preflight.mjs"
+  }
+}
